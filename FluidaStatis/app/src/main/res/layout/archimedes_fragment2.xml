@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="Fa"
+                android:textColor="#00FFFF"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:id="@+id/editTextFa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="18"
+                android:inputType="numberDecimal"
+                android:hint="gaya apung (N)"
+                android:textColorHint="#808080"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/textView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/editTextFa"
+                android:text="ρf"
+                android:textColor="#00FFFF"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/editTextroF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="18"
+                android:textColorHint="#808080"
+                android:textColor="#FFFFFF"
+                android:inputType="numberDecimal"
+                android:hint="massa jenis zat cair (kg/m³)"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/editTextroF"
+                android:text="Vbf"
+                android:textColor="#00FFFF"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextVbf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="18"
+                android:textColorHint="#808080"
+                android:textColor="#FFFFFF"
+                android:inputType="numberDecimal"
+                android:hint="volume benda yang dipindahkan (m³)"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/editTextVbf"
+                android:text="g"
+                android:textColor="#00FFFF"
+                android:textSize="20dp" />
+
+
+            <EditText
+                android:id="@+id/editTextg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="18"
+                android:inputType="none"
+                android:textColor="#FFFFFF"
+                android:text="Gravitasi (9.8 m/s²)"
+                android:editable="false"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/buttonHitungFa"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="fa"
+                android:background="@drawable/button_click"
+                android:layout_below="@+id/editTextg"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5" />
+            <Button
+                android:id="@+id/buttonHitungRof"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="ro f"
+                android:background="@drawable/button_click"
+                android:layout_alignBaseline="@+id/buttonHitungFa"
+                android:layout_alignBottom="@+id/buttonHitungFa"
+                android:layout_centerHorizontal="true" />
+            <Button
+                android:id="@+id/buttonHitungVbf"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="Vbf"
+                android:background="@drawable/button_click"
+                android:layout_alignBaseline="@+id/buttonHitungRof"
+                android:layout_alignBottom="@+id/buttonHitungRof"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_below="@+id/buttonHitungFa"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFD700"
+                android:textSize="20dp"
+                android:text="" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

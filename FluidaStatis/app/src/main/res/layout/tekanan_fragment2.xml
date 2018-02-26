@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text="P"
+        android:textColor="#00FFFF"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/editTextP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="18"
+        android:inputType="numberDecimal"
+        android:textColorHint="#808080"
+        android:textColor="#FFFFFF"
+        android:hint="Tekanan (N/m²)"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/editTextP"
+        android:text="F"
+        android:textColor="#00FFFF"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/editTextF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="18"
+        android:textColorHint="#808080"
+        android:textColor="#FFFFFF"
+        android:inputType="numberDecimal"
+        android:hint="Gaya (N)"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/editTextF"
+        android:text="A"
+        android:textColor="#00FFFF"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="18"
+        android:inputType="numberDecimal"
+        android:textColorHint="#808080"
+        android:textColor="#FFFFFF"
+        android:hint="Luas alas/penampang (m²)"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonHitungTekanan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="P"
+        android:background="@drawable/button_click"
+        android:layout_below="@+id/editTextA"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonHitungGaya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F"
+        android:background="@drawable/button_click"
+        android:layout_above="@+id/hasil"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/buttonHitungLuas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:background="@drawable/button_click"
+        android:layout_alignBaseline="@+id/buttonHitungTekanan"
+        android:layout_alignBottom="@+id/buttonHitungTekanan"
+        android:layout_alignRight="@+id/editTextA"
+        android:layout_alignEnd="@+id/editTextA" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonHitungTekanan"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFD700"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="" />
+
+</RelativeLayout>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/background">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="25dp"
+                android:text="F1"
+                android:textColor="#00FFFF"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:id="@+id/editTextF1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:hint="gaya tekan (N)"
+                android:textColorHint="#808080"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/textView1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/editTextF1"
+                android:text="A1"
+                android:textColor="#00FFFF"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:id="@+id/editTextA1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:hint="luas penampang silinder tekan (m²)"
+                android:layout_below="@+id/textView2"
+                android:textColorHint="#808080"
+                android:textColor="#FFFFFF"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextA1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:textColor="#00FFFF"
+                android:text="====" />
+
+
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/textView5"
+                android:text="F2"
+                android:textColor="#00FFFF"
+                android:textSize="20dp"/>
+
+
+            <EditText
+                android:id="@+id/editTextF2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:hint="berat beban (N)"
+                android:textColorHint="#808080"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/textView3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/editTextF2"
+                android:text="A2"
+                android:textColor="#00FFFF"
+                android:textSize="20dp"/>
+
+            <EditText
+                android:id="@+id/editTextA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="16"
+                android:inputType="numberDecimal"
+                android:hint="luas penampang silinder beban (m²)"
+                android:textColorHint="#808080"
+                android:textColor="#FFFFFF"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:id="@+id/buttonHitungF1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="F1"
+                android:background="@drawable/button_click"
+                android:layout_alignBaseline="@+id/buttonHitungA2"
+                android:layout_alignBottom="@+id/buttonHitungA2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <Button
+                android:id="@+id/buttonHitungA2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="A2"
+                android:background="@drawable/button_click"
+                android:layout_alignBaseline="@+id/buttonHitungF2"
+                android:layout_alignBottom="@+id/buttonHitungF2"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+            <Button
+                android:id="@+id/buttonHitungF2"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:text="F2"
+                android:background="@drawable/button_click"
+                android:layout_below="@+id/editTextA2"
+                android:layout_toRightOf="@+id/textView5"
+                android:layout_toEndOf="@+id/textView5" />
+            <Button
+                android:id="@+id/buttonHitungA1"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="A1"
+                android:background="@drawable/button_click"
+                android:layout_above="@+id/hasil"
+                android:layout_toLeftOf="@+id/textView5"
+                android:layout_toStartOf="@+id/textView5" />
+
+
+            <TextView
+                android:id="@+id/hasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/buttonHitungA2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:textColor="#FFD700"
+                android:textSize="20dp"
+                android:text="" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text="ρ"
+        android:textColor="#00FFFF"
+        android:textSize="25dp" />
+
+
+    <EditText
+        android:id="@+id/editTextro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="18"
+        android:inputType="numberDecimal"
+        android:hint="massa jenis zat (kg/m³)"
+        android:textColorHint="#808080"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/editTextro"
+        android:text="m"
+        android:textColor="#00FFFF"
+        android:textSize="25dp" />
+
+
+    <EditText
+        android:id="@+id/editTextM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="18"
+        android:inputType="numberDecimal"
+        android:hint="massa zat (kg)"
+        android:textColorHint="#808080"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/editTextM"
+        android:text="V"
+        android:textColor="#00FFFF"
+        android:textSize="25dp" />
+
+
+    <EditText
+        android:id="@+id/editTextV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="18"
+        android:inputType="numberDecimal"
+        android:hint="volume (m³)"
+        android:textColorHint="#808080"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonHitungMassaJenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ro"
+        android:background="@drawable/button_click"
+        android:layout_alignBaseline="@+id/buttonHitungMassa"
+        android:layout_alignBottom="@+id/buttonHitungMassa"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/buttonHitungMassa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:background="@drawable/button_click"
+        android:layout_below="@+id/editTextV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp" />
+
+    <Button
+        android:id="@+id/buttonHitungVolume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V"
+        android:background="@drawable/button_click"
+        android:layout_alignBaseline="@+id/buttonHitungMassa"
+        android:layout_alignBottom="@+id/buttonHitungMassa"
+        android:layout_alignRight="@+id/editTextV"
+        android:layout_alignEnd="@+id/editTextV" />
+
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonHitungMassaJenis"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFD700"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:text="" />
+
+</RelativeLayout>
